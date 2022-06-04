@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    
+    
+    <div class="widget">
+        <div class="fecha">
+            <p id="nivel" class="diaSemana"></p>% --
+            <p id="daynow" class="dia"></p>
+            <p>/</p>
+            <p id="monthnow" class="mes"></p>
+            <p>/</p>
+            <p id="yearnow" class="year">:</p>
+        </div>
+        <div class="reloj">      
+            <p id="hournow" class="horas"></p>
+            <p>:</p>
+            <p id="minutesnow" class="minutos"></p>
+            <p>:</p>
+            <div class="caja-segundos">
+                <p id="ampm" class="ampm"></p>
+                <p id="secondsnow" class="segundos"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <form id="control_form">
+            <div class="alert">Your message sent</div>
+            <label for="date"><p>Fecha</p></label>
+            <div class="border"></div>    
+            <div class="inputBox">
+                
+                <input type="date" name="date" id="date">
+            </div>
+            <label for="time"><p>Hora</p></label>
+                <div class="border"></div>   
+            <div class="inputBox">
+                <input type="time" name="time" id="time1">
+            </div>
+            <div class="inputBox">
+                <button id="save1">Save</button>
+                <h1><button id="setclear">SetClear</button></h1>
+                <p><button id="suministrar">Drop</button></p>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="datatable-container">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span><input type="checkbox"></span></li>
+                    <li>
+                        <button>
+                            <i class="material-icons">add_circle</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">edit</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="material-icons">share</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="search">
+                <input type="text" name="" id="" class="search-input">
+            </div>
+        </div> 
+        
+        <table class="datatable"> 
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>No.</th>
+                    <th>Hora</th>
+                    <th>Jornada</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td>1</td>
+                    <td><p id="timealarm1" ></p></td>
+                    <td><p id="ampmalarm1" ></p></td>
+                    <td><p id="datealarm1" ></p></td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td>2</td>
+                    <td><p id="timealarm2" ></p></td>
+                    <td><p id="ampmalarm2" ></p></td>
+                    <td><p id="datealarm2" ></p></td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td>3</td>
+                    <td><p id="timealarm3" ></p></td>
+                    <td><p id="ampmalarm3" ></p></td>
+                    <td><p id="datealarm3" ></p></td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td>4</td>
+                    <td><p id="timealarm4" ></p></td>
+                    <td><p id="ampmalarm4" ></p></td>
+                    <td><p id="datealarm4" ></p></td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td>5</td>
+                    <td><p id="timealarm5" ></p></td>
+                    <td><p id="ampmalarm5" ></p></td>
+                    <td><p id="datealarm5" ></p></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer-tools">
+            
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>

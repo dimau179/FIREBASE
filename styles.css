@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    font-family: Arial;
+    background: rgba(0,0,0,.5);
+    font-size: 1.5em;
+    float: right;
+    width: 40%;
+    height: 540px;
+    padding: 20px;
+    display:inline;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em;
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+
+}
+
+.container form{
+    
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.container form label{
+    font-size: 40px;
+    margin: 0px;
+    font-size: Arial;
+}
+
+.inputBox{
+    width: 80%;
+    margin: 0px;
+    overflow: hidden;
+}
+.border{
+    width: 100%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.552);
+}
+
+.inputBox input[type="time"], .inputBox input[type="date"]{
+    text-align: center;
+    font-family: Arial;
+    background-color:rgba(0,0,0,.5);
+    width: 100%;
+    height: 30px;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.826);
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.927);
+}
+
+.inputBox button{
+    float: left;
+    width: 30%;    
+    padding: 10px 10px;
+    border: none;
+    margin-left: 3px;
+    outline: none;
+    box-sizing: border-box;
+    background: rgba(26, 66, 112, 0.475);
+    color: rgba(255, 255, 255, 0.927);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    
+    
+}
+.inputBox p button{
+    float: left;
+    width: 30%;    
+    padding: 10px 10px;
+    border: none;
+    margin-left: 3px;
+    outline: none;
+    box-sizing: border-box;
+    background: rgba(26, 112, 27, 0.556);
+    color: rgba(255, 255, 255, 0.927);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.inputBox h1 button{
+    float: left;
+    width: 30%;    
+    padding: 10px 10px;
+    border: none;
+    margin-left: 3px;
+    outline: none;
+    box-sizing: border-box;
+    background: rgba(209, 10, 10, 0.556);
+    color: rgba(255, 255, 255, 0.927);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.inputBox button:hover{
+    background: rgb(26, 66, 112);
+    transition: all 0.3s ease;
+}
+
+.inputBox h1 button:hover{
+    background: rgb(255, 2, 2);
+    transition: all 0.3s ease;
+}
+
+.inputBox p button:hover{
+    background: rgb(34, 154, 36);
+    transition: all 0.3s ease;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+.alert{
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+
+
+
+
+.widget{
+    float: left;
+    width: 50%;
+    display: inline;
+    margin: 2em;
+ /*margin:32px;*/
+}
+
+.widget p {
+ display: inline-block;
+ line-height: 1em;
+}
+
+.fecha {
+    font-family: Arial;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width: 100%;
+   }
+
+.reloj{
+ font-family: Arial;
+ width: 100%;
+ padding: 20px;
+ font-size: 4em;
+ text-align: center;
+ background: rgba(0,0,0,.5);
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+   }
+
+.reloj .segundos, .reloj .ampm{
+ font-size: 32px;
+ display: block;
+}
+
+.material-icons{
+    font-size: 16px;
+}
+
+.datatable-container{
+    font-family: Arial;
+    display: inline;
+    float: left;
+    background-color: rgba(0,0,0,.5);
+    color: rgba(255, 255, 255, 0.927);
+    width:50%;
+    font-size: 20px;
+    margin: 2em;
+    margin-top: 0px;
+    
+}
+.datatable-container .header-tools{
+    border-bottom: solid 1px rgba(255, 255, 255, 0.552);
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search{
+width: 30%;
+}
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px rgba(255, 255, 255, 0.552);
+    color: rgba(255, 255, 255, 0.927);
+}
+
+.datatable-container .header-tools .tools {
+    width: 70%;
+}
+.datatable-container .header-tools .tools ul{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    align-items: baseline;
+    padding: 0px 5px;
+}
+.datatable-container .footer-tools{
+    padding: 3px;
+}
+
+.datatable-container .header-tools .tools ul li button{
+    font-family: Arial;
+    background: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    color: rgba(255, 255, 255, 0.927);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.datatable-container .header-tools .tools ul li span input{
+    width: 15px;
+    height: 15px;
+}
+
+.datatable-container .header-tools .tools ul li button:hover{
+    background: rgb(26, 66, 112);
+    border-radius: 3px;
+}
+
+.datatable-container .header-tools .tools ul li button{
+    padding: 10px 10px;
+}
+.datatable-container .datatable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: 10px 10px;
+    text-align: center ;
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: center ;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.552);
+}
+
+.datatable-container .datatable .table-checkbox{
+    padding: 10px 10px;
+}
+.datatable-container .datatable .table-checkbox input{
+    width: 15px;
+    height: 15px;
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px rgba(43, 42, 42, 0.5);
+}
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: rgba(0,0,0,.5);
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: rgb(26, 66, 112);;
+}
